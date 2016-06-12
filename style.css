@@ -1,0 +1,990 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 20px;
+}
+
+#main {
+    width: 640px;
+    height: 960px;
+}
+
+#main ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #fff;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: url("images/bg-01.jpg") no-repeat center center;
+}
+
+#main ul li.zIndex {
+    z-index: 6;
+}
+
+#main ul li:nth-of-type(1) {
+
+    display: block;
+
+}
+
+#main ul li:nth-of-type(2) {
+
+
+}
+
+#main ul li:nth-of-type(3) {
+
+
+}
+
+#main ul li:nth-of-type(4) {
+
+
+}
+
+.p1-con1 {
+    position: relative;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 300px;
+}
+
+.con1 {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+
+.p1_div1 {
+    position: absolute;
+    top: 21%;
+    left: 0;
+    width: 19%;
+    height: 36px;
+    background: dodgerblue;
+    animation: p1_div1 1s linear 1s 1;
+    -webkit-animation: p1_div1 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@keyframes p1_div1 {
+    0% {
+        transform: scaleX(1)
+    }
+    100% {
+        transform: scaleX(2);
+    }
+}
+
+@-webkit-keyframes p1_div1 {
+    0% {
+        transform: scaleX(1)
+    }
+    100% {
+        transform: scaleX(2);
+    }
+}
+
+.p2_div2 {
+    position: absolute;
+    right: 0;
+    top: 21%;
+    width: 19%;
+    height: 36px;
+    background: dodgerblue;
+    animation: p2_div2 1s linear 1s 1;
+    -webkit-animation: p2_div2 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes p2_div2 {
+    0% {
+        transform: scaleX(1)
+    }
+    100% {
+        transform: scaleX(2)
+    }
+}
+
+@-webkit-keyframes p2_div2 {
+    0% {
+        transform: scaleX(1)
+    }
+    100% {
+        transform: scaleX(2)
+    }
+}
+
+.p1_img1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    /*最后一个参数是运动多少次,infinite是运动无限次*/
+    /*1.动画名称2.完成动画所花费的时间，以秒或毫秒计3.规定动画的速度曲线。4延迟时间5规定播放次数*/
+    animation: imgActive 1s linear 0s alternate;
+    -webkit-animation: imgActive 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes imgActive {
+    0% {
+        transform: scale(1.5) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(2) rotate(70deg);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1) rotate(140deg);
+        opacity: 1;
+    }
+    60% {
+        transform: rotate(210deg);
+    }
+    80% {
+        transform: rotate(280deg)
+    }
+    100% {
+        transform: rotate(330deg)
+    }
+}
+
+@-webkit-keyframes imgActive {
+    0% {
+        transform: scale(1.5) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(2) rotate(70deg);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1) rotate(140deg);
+        opacity: 1;
+    }
+    60% {
+        transform: rotate(210deg);
+    }
+    80% {
+        transform: rotate(280deg)
+    }
+    100% {
+        transform: rotate(330deg)
+    }
+}
+
+.p2_img2 {
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    width: 80%;
+    animation: img2Active 1s linear 1s 1;
+    -webkit-animation: img2Active 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes img2Active {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes img2Active {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.p1-con2 {
+    position: relative;
+    margin: 60px auto;
+    width: 280px;
+    height: auto;
+}
+
+.p1-con2 .img {
+    width: 100%;
+    animation: flipInX 1s linear 2s 1;
+    -webkit-animation: flipInX 1s linear 2s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p1-con2 .sex {
+    position: absolute;
+    right: -1px;
+    top: -26px;
+    width: 60px;
+    height: 60px;
+    animation: zoomInRight 2s linear 2s 1;
+    -webkit-animation: zoomInRight 2s linear 2s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*第二屏基本资料 */
+.p2-con {
+    position: relative;
+    margin: 6%;
+    width: 88%;
+    height: 90%;
+}
+
+.p2-top {
+    margin-top: 10%;
+    width: 100%;
+    height: 90px;
+    position: relative;
+}
+
+.p2-top h2 {
+    position: absolute;
+    left: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 36px;
+    opacity: 0;
+    animation: fadeIn 0.5s linear 0.5s 1;
+    -webkit-animation: fadeIn 0.5s linear 0.5s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.tlebox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 50%;
+    height: 40px;
+    background: #FFFFFF;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.tle11 {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    width: 50%;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 40px;
+    z-index: 2;
+}
+
+.photo {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    animation: bounceInLeft 1s linear 0s 1;
+    -webkit-animation: bounceInLeft 1s linear 0s 1;
+}
+
+.p2-list {
+    width: 100%;
+    height: 100%;
+}
+
+.order-1 {
+    animation: fadeIn 0.5s linear 0.5s 1;
+    -webkit-animation: fadeIn 0.5s linear 0.5s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.order-2 {
+    animation: fadeInDown 0.3s linear 1s 1;
+    -webkit-animation: fadeInDown 0.3s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.order-3 {
+    animation: fadeInDown 0.3s linear 1.3s 1;
+    -webkit-animation: fadeInDown 0.3s linear 1.3s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.order-4 {
+    animation: fadeInDown 0.3s linear 1.6s 1;
+    -webkit-animation: fadeInDown 0.3s linear 1.6s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.order-5 {
+    animation: fadeInDown 0.3s linear 1.9s 1;
+    -webkit-animation: fadeInDown 0.3s linear 1.9s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.order-6 {
+    animation: fadeInDown 0.3s linear 2.1s 1;
+    -webkit-animation: fadeInDown 0.3s linear 2.1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p2-list div {
+    position: relative;
+    margin-top: 10%;
+    width: 98%;
+    height: 40px;
+    clear: both;
+}
+
+.p2-list div span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 42px;
+    width: 100%;
+    background: #FFFFFF;
+    opacity: 0.3;
+    z-index: 1;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+
+}
+
+.p2-list div p {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    width: 100%;
+    height: 42px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 42px;
+    z-index: 2;
+
+}
+
+/*第san屏专业技能 */
+.p3-con {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+}
+
+.p3top {
+    position: relative;
+    top: 4%;
+}
+
+.p3top .div-1 {
+    position: relative;
+    width: 100%;
+    height: 40px;
+
+}
+
+.p3top .div-1 .span1 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 30%;
+    height: 40px;
+    font-size: 1.2rem;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid white;
+    animation: span1 1s linear 0s 1;
+    -webkit-animation: span1 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+@keyframes span1 {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+
+}
+
+@-webkit-keyframes span1 {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+
+}
+
+.p3top .div-1-box {
+    position: relative;
+    margin-left: 20%;
+    right: 0;
+    top: 0;
+    height: 42px;
+    width: 30%;
+    animation: div-1-box 1s linear 0s 1;
+    -webkit-animation: div-1-box 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p3top .div-1-box .span2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 42px;
+    width: 100%;
+    background: white;
+    opacity: 0.8;
+    z-index: 1;
+
+}
+
+.p3top .div-1-box .span3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 42px;
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 42px;
+    text-align: center;
+    color: #000;
+    z-index: 2;
+
+}
+
+@keyframes div-1-box {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+
+}
+
+@-webkit-keyframes div-1-box {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+
+}
+
+.p3con {
+    position: relative;
+    top: 7%;
+    width: 100%;
+    height: 38%;
+    animation: flipInX 1s linear 1s 1;
+    -webkit-animation: flipInX 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.p3con .boxbg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ee9906;
+    opacity: 0.6;
+}
+
+.p3con .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.p3con .text h3 {
+    margin: 10px 0px 0px 20px;
+    width: 20%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.p3con .text p {
+    margin: 10px;
+    line-height: 22px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+}
+
+.p3con1 {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 49%;
+
+    animation: bounceInUp 1s linear 1.5s 1;
+    -webkit-animation: bounceInUp 1s linear 1.5s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p3con1-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 1%;
+    width: 99%;
+    height: 100%;
+    background: #065eb7;
+    opacity: 0.8;
+}
+
+.p3con1-box {
+    padding-top: 3%;
+    width: 100%;
+    height: 97%;
+}
+
+.p3con1-box-inner {
+    position: relative;
+    float: left;
+    margin: 2%;
+    width: 21%;
+    height: 100px;
+
+}
+
+.p3con1 .div1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px auto;
+    width: 72px;
+    height: 72px;;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.p3con1 .name {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.color-1 {
+    color: #ff8833;
+}
+
+.color-2 {
+    color: #484ddb
+}
+
+.color-3 {
+    color: #eb4fa9
+}
+
+.color-4 {
+    color: #6bbd07
+}
+
+.color-5 {
+    color: #2f859d
+}
+
+.color-6 {
+    color: #bd171a
+}
+
+.color-7 {
+    color: #009300
+}
+
+.color-8 {
+    color: #008fd7
+}
+
+.p3con1 .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px auto;
+    width: 72px;
+    height: 72px;
+    z-index: 2;
+    animation: rowImg 2s linear 2.5s infinite;
+    -webkit-animation: rowImg 2s linear 2.5s infinite;
+
+}
+
+@keyframes rowImg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@-webkit-keyframes rowImg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/*第4屏工作经验*/
+.p4-con {
+    width: 100%;
+    height: 100%;
+}
+
+.p4-con-left {
+    position: relative;
+    margin: 0 2%;
+    width: 20%;
+    height: 100%;
+}
+
+.p4-con-left .border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid whitesmoke;
+    animation: border 1s linear 0s 1;
+    -webkit-animation: border 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+@keyframes border {
+    0% {
+        transform: translateY(800px);
+    opacity(0);
+    }
+    100% {
+        transform: translateY(0);
+    opacity(1);
+    }
+
+}
+
+.p4-con-left .box {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 30%;
+}
+
+.p4-con-left .box .con {
+    position: relative;
+}
+
+.p4-con-left .top-20 {
+    top: 20%;
+}
+
+.p4-con-left .top-45 {
+    top: 45%;
+}
+
+.p4-con-left .top-70 {
+    top: 70%;
+}
+
+.p4-con-left .box .con-border {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 34%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+.p4-con-left .box .con-radius {
+    position: absolute;
+    left: 0;
+    margin: 12%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    width: 76%;
+    height: 25%;
+    text-align: center;
+    line-height: 100%;
+    border-radius: 50%;
+    background: white;
+}
+
+.p4-con-left .order1-1 {
+    animation: fadeIn 1s linear 0s 1;
+    -webkit-animation: fadeIn 1s linear 0s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-left .order1-2 {
+    animation: bounceIn 1s linear 0.4s 1;
+    -webkit-animation: bounceIn 1s linear 0.4s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-left .order2-1 {
+    animation: fadeIn 1s linear 0.5s 1;
+    -webkit-animation: fadeIn 1s linear 0.5s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-left .order2-2 {
+    animation: bounceIn 1s linear 0.8s 1;
+    -webkit-animation: bounceIn 1s linear 0.8s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-left .order3-1 {
+    animation: fadeIn 1s linear 1s 1;
+    -webkit-animation: fadeIn 1s linear 1s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-left .order3-2 {
+    animation: bounceIn 1s linear 1.2s 1;
+    -webkit-animation: bounceIn 1s linear 1.2s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-right .margin-10 {
+    margin-top: 90%;
+}
+
+.p4-con-right {
+    position: absolute;
+    top: 0;
+    right: 9%;
+    margin: 0 auto;
+    width: 66%;
+    height: 96%;
+}
+
+.p4-con-right .top-19 {
+    top: 19%;
+    animation: flipInY 1s linear 0.2s 1;
+    -webkit-animation: flipInY 1s linear 0.2s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.p4-con-right .top-15 {
+    top: 15%;
+    animation: flipInY 1s linear 0.5s 1;
+    -webkit-animation: flipInY 1s linear 0.5s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-right .top-11 {
+    top: 11%;
+    animation: flipInY 1s linear 0.8s 1;
+    -webkit-animation: flipInY 1s linear 0.8s 1;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.p4-con-right .div {
+    position: relative;
+    width: 100%;
+    height: 30%;
+
+}
+
+.p4-con-right .div .box {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background: #fff;
+    opacity: 0.8;
+}
+
+.p4-con-right .div .test {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.p4-con-right .div .test h3 {
+    margin-top: 8px;
+    width: 100%;
+    text-indent: 20px;
+    line-height: 26px;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.p4-con-right .div .test p {
+    padding: 6px;
+    font-size: 0.6rem;
+    line-height: 16px;
+    color: #000
+}
+
+
+.music {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: url("./audioFile/music.svg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 9;
+}
+
+.musicMove {
+    -webkit-animation: musicMove 1s linear 0s infinite;
+    animation: musicMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.music audio {
+    display: none;
+}
+.tel{ position: absolute; right: 30px;
+    top: 40px;
+    animation: tada 1s linear 1s infinite;
+    -webkit-animation: tada 1s linear 1s infinite;
+}
+.tel img{  width: 60px; height: auto;
+
+
+
+}
+
+
+
+
