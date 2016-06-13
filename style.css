@@ -134,8 +134,8 @@ body {
     top: 0;
     width: 100%;
     height: auto;
-    /*×îºóÒ»¸ö²ÎÊıÊÇÔË¶¯¶àÉÙ´Î,infiniteÊÇÔË¶¯ÎŞÏŞ´Î*/
-    /*1.¶¯»­Ãû³Æ2.Íê³É¶¯»­Ëù»¨·ÑµÄÊ±¼ä£¬ÒÔÃë»òºÁÃë¼Æ3.¹æ¶¨¶¯»­µÄËÙ¶ÈÇúÏß¡£4ÑÓ³ÙÊ±¼ä5¹æ¶¨²¥·Å´ÎÊı*/
+    /*æœ€åä¸€ä¸ªå‚æ•°æ˜¯è¿åŠ¨å¤šå°‘æ¬¡,infiniteæ˜¯è¿åŠ¨æ— é™æ¬¡*/
+    /*1.åŠ¨ç”»åç§°2.å®ŒæˆåŠ¨ç”»æ‰€èŠ±è´¹çš„æ—¶é—´ï¼Œä»¥ç§’æˆ–æ¯«ç§’è®¡3.è§„å®šåŠ¨ç”»çš„é€Ÿåº¦æ›²çº¿ã€‚4å»¶è¿Ÿæ—¶é—´5è§„å®šæ’­æ”¾æ¬¡æ•°*/
     animation: imgActive 1s linear 0s alternate;
     -webkit-animation: imgActive 1s linear 0s 1;
     -webkit-animation-fill-mode: both;
@@ -270,7 +270,7 @@ body {
     animation-fill-mode: both;
 }
 
-/*µÚ¶şÆÁ»ù±¾×ÊÁÏ */
+/*ç¬¬äºŒå±åŸºæœ¬èµ„æ–™ */
 .p2-con {
     position: relative;
     margin: 6%;
@@ -420,7 +420,7 @@ body {
 
 }
 
-/*µÚsanÆÁ×¨Òµ¼¼ÄÜ */
+/*ç¬¬sanå±ä¸“ä¸šæŠ€èƒ½ */
 .p3-con {
     position: relative;
     width: 100%;
@@ -640,7 +640,7 @@ body {
     height: 72px;
     text-align: center;
     line-height: 72px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     z-index: 3;
 }
@@ -710,7 +710,7 @@ body {
 
 }
 
-/*µÚ4ÆÁ¹¤×÷¾­Ñé*/
+/*ç¬¬4å±å·¥ä½œç»éªŒ*/
 .p4-con {
     width: 100%;
     height: 100%;
